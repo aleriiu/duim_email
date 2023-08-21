@@ -293,6 +293,20 @@
 		}
 
 		/* размер цены товара */
+
+		.mainImage {
+			height: auto !important;
+			max-width: 600px !important;
+			width: 100% !important;
+		}
+
+		@media only screen and (max-width: 480px) {
+			.mainImage {
+				height: auto !important;
+				max-width: 600px !important;
+				width: 100% !important;
+			}
+		}
 	</style>
 </head>
 <!-- комментарий -->
@@ -315,8 +329,10 @@
           <tr>
               <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
+
+						<!-- если письмо не отображается -->
 						<div style="background-color:#ffffff; Margin:0px auto; max-width:600px;">
-							<table align="center" cellpadding="0" cellspacing="0" 
+							<table align="center" cellpadding="0" cellspacing="0"
 								style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%; background-color:#ffffff;">
 								<tbody>
 									<tr>
@@ -334,18 +350,23 @@
 																<div
 																	style="font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif; font-size:12px; font-weight:normal; line-height:12px; text-align:center;color:#BDBDBD; ">
 																	Плохо отображается письмо? <a color="#BDBDBD"
-																		href="#" style="color: #BDBDBD;">Перейдите по
+																		href="{{WebLetterUrl}}" style="color: #BDBDBD;">Перейдите по
 																		ссылке</a></div>
 															</td>
 														</tr>
 													</tbody>
 												</table>
-											</div><!--[if mso | IE]></td></tr></table><![endif]-->
+											</div>
+											<!--[if mso | IE]></td></tr></table><![endif]-->
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
+
+						<!-- если письмо не отображается -->
+
+
 						<!--[if mso | IE]>
 		</td>
 		  </tr>
@@ -510,9 +531,15 @@
 																			<tbody>
 																				<tr>
 																					<td
-																						style="padding: 0px 0px 10px; margin: 0px; text-align: justify;">
-																						<img alt="Some Image"
-																							src="/ru/user_file?resource=images&amp;user_id=4094440&amp;name=559h122ll-px.png" />
+																						style="padding: 0px 0px 10px; margin: 0px; text-align: center; width: 100% !important;">
+																						<a href="#"
+																							style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;display:block; width: 100% !important;"
+																							target="_blank">
+																							<img alt="Some Image"
+																								src="/ru/user_file?resource=images&amp;user_id=4094440&amp;name=559h122ll-px.png" alt="logo-metallkindf91bfec0573a140.png"
+																								width="100"
+																								class="mainImage"
+																								style="width: 100% !important; display: block; border: none;" /></a>
 																					</td>
 																				</tr>
 																				<tr style="border-collapse:collapse">
@@ -530,7 +557,7 @@
 																							style="text-align: justify; padding-left: 20px; padding-right: 20px; padding-top: 7px; padding-bottom: 8px; Margin:0;">
 																							<span
 																								style="font-size:12px;"><span
-																									style="font-family: arial, sans-serif; font-weight: 300;">Мы
+																									style="font-family:Verdana,Geneva,sans-serif; font-weight: 300;">Мы
 																									рады сообщить Вам о
 																									нашем эксклюзивном
 																									предложении! Мы
@@ -602,7 +629,7 @@
 																												src="https://i.ibb.co/p2yKN1R/pic-1.jpg"
 																												alt="pic-1"
 																												border="0"
-																												height="120"
+																												height="110"
 																												valign="center"
 																												style="vertical-align: middle;" /></a>
 																									</td>
@@ -613,52 +640,63 @@
 																										style="Margin:0;padding-left:5px;padding-right:5px;padding-bottom:8px;border:0"
 																										width="55%">
 																										<div
-																											style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:14px;text-decoration:none;display:block;color:#1b1919">
-																											<h3
-																												style="text-align: left; Margin: 0; padding: 0; padding-bottom: 5px; color: #3A84B4;">
-																												<br />
-																												<span
-																													style="font-size:14px;"><span
-																														style="font-family:Verdana,Geneva,sans-serif; line-height: 14px;">Котел
-																														BAXI
-																														Duo-tec
-																														Compact
-																														24
-																														GA
-																														конденсационный</span></span>
-																											</h3>
-																											<p
-																												style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px;font-family: arial, sans-serif;line-height:12px;color:#313130">
-																												Газовый
-																												котел
-																												конденсационный
-																												настенный
-																												BAXI
-																												Duo-tec
-																												Comact
-																												24 GA
-																												двухконтурный
-																												с
-																												закрытой
-																												камерой
-																												сгорания
-																												24 кВт
-																												модель
-																												A7722038
-																												характеризуется
-																												гибкой
-																												адаптивностью
-																												к
-																												особенностям
-																												работы:
-																												оборудование
-																												учитывает
-																												характеристики
-																												дымохода,
-																												состав и
-																												разновидность
-																												газа.
-																											</p>
+																											style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif;font-size:14px;text-decoration:none;display:block;color:#1b1919">
+																											<a href="#"
+																												style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif; font-size:14px;text-decoration:none;display:block;color:#3A84B4"
+																												target="_blank">
+																												<h3
+																													style="text-align: left; Margin: 0; padding: 0; padding-bottom: 5px; color: #3A84B4;">
+																													<br />
+																													<span
+																														style="font-size:14px;"><span
+																															style="font-family:Verdana,Geneva,sans-serif; line-height: 14px;">Котел
+																															BAXI
+																															Duo-tec
+																															Compact
+																															24
+																															GA
+																															конденсационный</span></span>
+																												</h3>
+																											</a>
+																											<a href="#"
+																												style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif; font-size:12px;text-decoration:none;display:block;color:#313130"
+																												target="_blank">
+																												<p
+																													style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px; font-family:Verdana,Geneva,sans-serif;line-height:12px;color:#313130">
+																													Газовый
+																													котел
+																													конденсационный
+																													настенный
+																													BAXI
+																													Duo-tec
+																													Comact
+																													24
+																													GA
+																													двухконтурный
+																													с
+																													закрытой
+																													камерой
+																													сгорания
+																													24
+																													кВт
+																													модель
+																													A7722038
+																													характеризуется
+																													гибкой
+																													адаптивностью
+																													к
+																													особенностям
+																													работы:
+																													оборудование
+																													учитывает
+																													характеристики
+																													дымохода,
+																													состав
+																													и
+																													разновидность
+																													газа.
+																												</p>
+																											</a>
 																										</div>
 																									</td>
 																									<td align="center"
@@ -727,43 +765,54 @@
 																										width="55%">
 																										<div
 																											style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:14px;text-decoration:none;display:block;color:#1b1919">
-																											<h3
-																												style="text-align: left; Margin: 0; padding: 0; padding-bottom: 5px; color: #3A84B4;">
-																												<br />
-																												<span
-																													style="font-size:14px;"><span
-																														style="font-family:Verdana,Geneva,sans-serif; line-height: 14px;">Труба
-																														полиэтиленовая
-																														с
-																														кислородным
-																														барьером
-																														PE-Xa/EVAL</span></span>
-																											</h3>
-																											<p
-																												style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px;font-family: arial, sans-serif;line-height:12px;color:#313130">
-																												Трубы
-																												REHAU
-																												RAUTITAN
-																												flex -
-																												продукция
-																												немецкого
-																												производства,
-																												сертифицированая
-																												международными
-																												организациями
-																												DVGW,
-																												DIN и
-																												российским
-																												ГОСТ-Р,
-																												соответствует
-																												нормам и
-																												требованиям
-																												по
-																												экологии
-																												и
-																												превосходит
-																												их.
-																											</p>
+																											<a href="#"
+																												style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif; font-size:14px;text-decoration:none;display:block;color:#3A84B4"
+																												target="_blank">
+																												<h3
+																													style="text-align: left; Margin: 0; padding: 0; padding-bottom: 5px; color: #3A84B4;">
+																													<br />
+																													<span
+																														style="font-size:14px;"><span
+																															style="font-family:Verdana,Geneva,sans-serif; line-height: 14px;">Труба
+																															полиэтиленовая
+																															с
+																															кислородным
+																															барьером
+																															PE-Xa/EVAL</span></span>
+																												</h3>
+																											</a>
+																											<a href="#"
+																												style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif; font-size:12px;text-decoration:none;display:block;color:#313130"
+																												target="_blank">
+																												<p
+																													style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px;font-family:Verdana,Geneva,sans-serif; line-height:12px;color:#313130">
+																													Трубы
+																													REHAU
+																													RAUTITAN
+																													flex
+																													-
+																													продукция
+																													немецкого
+																													производства,
+																													сертифицированая
+																													международными
+																													организациями
+																													DVGW,
+																													DIN
+																													и
+																													российским
+																													ГОСТ-Р,
+																													соответствует
+																													нормам
+																													и
+																													требованиям
+																													по
+																													экологии
+																													и
+																													превосходит
+																													их.
+																												</p>
+																											</a>
 																										</div>
 																									</td>
 																									<td align="center"
@@ -820,7 +869,7 @@
 																												src="https://i.ibb.co/8dHH6Mn/pic-3.jpg"
 																												alt="pic-3"
 																												border="0"
-																												height="100"
+																												height="110"
 																												valign="center"
 																												style="vertical-align: middle;" /></a>
 																									</td>
@@ -832,43 +881,54 @@
 																										width="55%">
 																										<div
 																											style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:14px;text-decoration:none;display:block;color:#1b1919">
-																											<h3
-																												style="text-align: left; Margin: 0; padding: 0; padding-bottom: 5px; color: #3A84B4;">
-																												<br />
-																												<span
-																													style="font-size:14px;"><span
-																														style="font-family:Verdana,Geneva,sans-serif; line-height: 14px;">Кран
-																														шаровой
-																														HB
-																														ETALON
-																														рычаг
-																														Uni-Fit</span></span>
-																											</h3>
-																											<p
-																												style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px;font-family: arial, sans-serif;line-height:12px;color:#313130">
-																												Трубы
-																												REHAU
-																												RAUTITAN
-																												flex -
-																												продукция
-																												немецкого
-																												производства,
-																												сертифицированая
-																												международными
-																												организациями
-																												DVGW,
-																												DIN и
-																												российским
-																												ГОСТ-Р,
-																												соответствует
-																												нормам и
-																												требованиям
-																												по
-																												экологии
-																												и
-																												превосходит
-																												их.
-																											</p>
+																											<a href="#"
+																												style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif; font-size:14px;text-decoration:none;display:block;color:#3A84B4"
+																												target="_blank">
+																												<h3
+																													style="text-align: left; Margin: 0; padding: 0; padding-bottom: 5px; color: #3A84B4;">
+																													<br />
+																													<span
+																														style="font-size:14px;"><span
+																															style="font-family:Verdana,Geneva,sans-serif; line-height: 14px;">Кран
+																															шаровой
+																															HB
+																															ETALON
+																															рычаг
+																															Uni-Fit</span></span>
+																												</h3>
+																											</a>
+																											<a href="#"
+																												style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Verdana,Geneva,sans-serif; font-size:12px;text-decoration:none;display:block;color:#313130"
+																												target="_blank">
+																												<p
+																													style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px;font-family:Verdana,Geneva,sans-serif;line-height:12px;color:#313130">
+																													Трубы
+																													REHAU
+																													RAUTITAN
+																													flex
+																													-
+																													продукция
+																													немецкого
+																													производства,
+																													сертифицированая
+																													международными
+																													организациями
+																													DVGW,
+																													DIN
+																													и
+																													российским
+																													ГОСТ-Р,
+																													соответствует
+																													нормам
+																													и
+																													требованиям
+																													по
+																													экологии
+																													и
+																													превосходит
+																													их.
+																												</p>
+																											</a>
 																										</div>
 																									</td>
 																									<td align="center"
@@ -906,7 +966,7 @@
 																						&nbsp;
 
 																						<p
-																							style="text-align: center; padding-bottom: 15px;">
+																							style="text-align: center; padding-bottom: 12px;">
 																							<span
 																								style="font-size:12px;"><span
 																									style="font-family:Verdana,Geneva,sans-serif;"><strong>Нажмите
@@ -1089,7 +1149,7 @@
 																									<td align="center"
 																										style="padding:0;Margin:0;padding-right:10px"
 																										valign="top"><a
-																											href="#"
+																											href="https://t.me/duimcompany"
 																											style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;text-decoration:underline;color:#FFFFFF"
 																											target="_blank"><img
 																												alt="Telegram"
